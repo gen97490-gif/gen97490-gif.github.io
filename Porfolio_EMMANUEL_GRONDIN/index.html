@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Emmanuel Grondin</title>
+  <meta name="description" content="Portfolio d'Emmanuel Grondin, étudiant en BUT Réseaux & Télécommunications spécialisé en cybersécurité.">
+  <meta name="theme-color" content="#2b2b2c">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/LOGO-onglet.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Devicon pour les logos des technologies -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/LOGO-onglet.jpg" alt="Emmanuel Grondin" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Emmanuel Grondin">Emmanuel Grondin</h1>
+
+          <p class="title" style="min-height: 1.5em;">Étudiant en BUT 3 R&T</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Afficher les contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:emmanuel.grondin@rt-iut.re" class="contact-link">emmanuel.grondin@rt-iut.re</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Téléphone</p>
+
+              <a href="tel:+33693019838" class="contact-link">+262 06 93 01 98 38</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Date de naissance</p>
+
+              <time datetime="2005-11-09">9 novembre 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localisation</p>
+
+              <address>Saint Denis, Réunion 97490</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/emmanuel-grondin-610211302/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/gen97490-gif" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link data-page-target="about">À propos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-page-target="resume">CV</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-page-target="portfolio">Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-page-target="blog">Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-page-target="contact">Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">À propos de moi</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Emmanuel Grondin je suis étudiant en 3ème année de BUT Réseaux &amp; Télécommunications, avec une spécialisation en cybersécurité.
+            Passionné par les réseaux, la sécurité informatique et l'intelligence artificielle, j'aime améliorer mes compétences à travers des projets concrets et des challenges techniques.
+          </p>
+
+          <p>
+            Ce site vous permet de consulter mon portfolio, mon CV, une vidéo de présentation ainsi que mes profils professionnels.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Mes domaines</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="server-outline" style="font-size: 40px; color: var(--crimson-red); margin: auto;"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Administration Réseaux</h4>
+
+                <p class="service-item-text">
+                  Conception, déploiement et maintenance d'infrastructures réseaux sécurisées et performantes.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="shield-checkmark-outline" style="font-size: 40px; color: var(--crimson-red); margin: auto;"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cybersécurité</h4>
+
+                <p class="service-item-text">
+                  Audit de sécurité, pentesting et mise en place de politiques de défense des systèmes.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="code-slash-outline" style="font-size: 40px; color: var(--crimson-red); margin: auto;"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Développement & Scripting</h4>
+
+                <p class="service-item-text">
+                  Automatisation de tâches (Python, Bash) et développement d'outils sur mesure.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="desktop-outline" style="font-size: 40px; color: var(--crimson-red); margin: auto;"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Systèmes & Virtualisation</h4>
+
+                <p class="service-item-text">
+                  Administration Linux/Windows et gestion d'environnements virtualisés (Docker, ESXi).
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials (renamed to skills)
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Compétences & Apprentissages</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <ion-icon name="server-outline" style="font-size: 40px; color: #ff6347;"></ion-icon>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Administration Réseaux</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Configuration et gestion d'infrastructures réseau, VLAN, routage, commutation. Expérience avec GNS3, équipements Cisco, protocoles BGP et OSPF.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <ion-icon name="shield-checkmark-outline" style="font-size: 40px; color: #ff6347;"></ion-icon>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Cybersécurité</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Pentesting, analyse de vulnérabilités, sécurité des réseaux, protocoles sécurisés. Outils : Nmap, Wireshark, John the Ripper, WPScan, Wazuh.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <ion-icon name="code-slash-outline" style="font-size: 40px; color: #ff6347;"></ion-icon>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Développement Web</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    HTML, CSS, JavaScript, PHP. Création de sites web, applications de gestion avec bases de données, intégration de frameworks CSS/JavaScript modernes.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <ion-icon name="cog-outline" style="font-size: 40px; color: #ff6347;"></ion-icon>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Systèmes & Infrastructure</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Administration Linux, Windows, Raspberry Pi, services réseau. Installation et configuration de systèmes d'exploitation et d'outils de monitoring (Cacti, SNMP).
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - Outils & Technologies
+        -->
+
+        <section class="tools-section">
+
+          <h3 class="h3 tools-title">Outils & Technologies</h3>
+
+          <div class="tools-grid">
+
+            <div class="tool-card">
+              <i class="devicon-docker-plain colored" style="font-size: 40px;"></i>
+              <p>Docker</p>
+            </div>
+
+            <div class="tool-card">
+              <i class="devicon-git-plain colored" style="font-size: 40px;"></i>
+              <p>Git</p>
+            </div>
+
+            <div class="tool-card">
+              <img src="C:\Users\gen97\Documents\Porfolio_EMMANUEL_GRONDIN\assets\images\hd-cisco-logo-transparent-background-701751694708614msmscwyuoe.png" style="width: 40px; height: 40px;" alt="Cisco Logo">
+              <p>Cisco</p>
+            </div>
+
+            <div class="tool-card">
+              <i class="devicon-linux-plain" style="font-size: 40px; color: white;"></i>
+              <p>Linux</p>
+            </div>
+
+            <div class="tool-card">
+              <i class="devicon-bash-plain" style="font-size: 40px; color: white;"></i>
+              <p>Bash/Shell</p>
+            </div>
+
+            <div class="tool-card">
+              <i class="devicon-mysql-plain colored" style="font-size: 40px;"></i>
+              <p>MySQL</p>
+            </div>
+
+            <div class="tool-card">
+              <i class="devicon-windows8-original colored" style="font-size: 40px;"></i>
+              <p>Windows</p>
+            </div>
+
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">CV</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formation</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">BUT Réseaux & Télécommunications - 3ème année</h4>
+
+              <span>2023 — 2026</span>
+
+              <p class="timeline-text">
+                Formation spécialisée en réseaux informatiques, cybersécurité et télécommunications. Apprentissage des protocoles réseau, administration système et sécurité des données.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Baccalauréat Scientifique</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Formation générale avec spécialisation en mathématiques et sciences de l'ingénieur préparant aux études supérieures en informatique et réseaux.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Expérience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stage final - NXO Indian Ocean</h4>
+
+              <span>Avril — Juin 2025</span>
+
+              <p class="timeline-text">
+                Stage de 2 mois au sein du département Réseaux & Sécurité. Déploiement d'équipements Cisco et Fortigate, support ITSM via Jira, migration SD-WAN, configuration VLAN et Wi-Fi, utilisation d'ESXi, GNS3 et Wireshark.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mes compétences</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Réseaux & TCP/IP</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Cybersécurité</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Linux & Windows</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python & Scripting</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section style="margin-top: 30px;">
+          <h3 class="h3" style="margin-bottom: 20px;">Mon CV</h3>
+          <embed src="./CV_2025_Emmanuel_Grondin.pdf" type="application/pdf" width="100%" height="600px" style="border: 1px solid var(--jet); border-radius: 10px;">
+          <div style="margin-top: 15px; text-align: center;">
+            <a href="./CV_2025_Emmanuel_Grondin.pdf" download class="form-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+              <ion-icon name="document-outline"></ion-icon>
+              <span>Télécharger mon CV (PDF)</span>
+            </a>
+          </div>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+            <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Cyber</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Réseaux</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Docker</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Autre</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Sélectionner une catégorie</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Cyber</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Réseaux</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Docker</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Autre</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="cyber">
+              <a href="#" class="project-link" data-pdf="./rapport/SAE 101 Mooc anssi.pdf" data-title="SAE 1.01 - Sensibilisation Cybersécurité">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./SAE101.png" alt="projet 101" loading="lazy">
+                </figure>
+                <h3 class="project-title">SAE 1.01 - Sensibilisation Cybersécurité</h3>
+                <p class="project-category">Cyber</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="réseaux">
+              <a href="#" class="project-link" data-pdf="./rapport/Compte_rendu.pdf" data-title="SAE 1.02 - Initiation Réseaux">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./SAE102.png" alt="projet 102" loading="lazy">
+                </figure>
+                <h3 class="project-title">SAE 1.02 - Initiation Réseaux</h3>
+                <p class="project-category">Réseaux</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="autre">
+              <a href="#" class="project-link" data-pdf="./rapport/SAE 202Rapport_audit_de_couverture_WIFI_Emmanuel_GRONDIN_et Benoit_Dijoux..pdf" data-title="SAE 1.03 - Réseaux & Protocoles">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./SAE103.png" alt="projet 103" loading="lazy">
+                </figure>
+                <h3 class="project-title">SAE 1.03 - Réseaux & Protocoles</h3>
+                <p class="project-category">Autre</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="réseaux">
+              <a href="#" class="project-link" data-pdf="./SAE_201_Emmanuel.GRONDIN_et_Yann.BOISVILLIERS_Compte_Rendu.pdf" data-title="SAE 2.01 - Admin Réseau & Services">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./SAE201.png" alt="projet 201" loading="lazy">
+                </figure>
+                <h3 class="project-title">SAE 2.01 - Admin Réseau & Services</h3>
+                <p class="project-category">Réseaux</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="autre">
+              <a href="#" class="project-link" data-pdf="./rapport/CR_SAE202_ALAMELOU_Rohan_BOUGHLEM_Bilel_GRONDIN_Emmanuel.pdf" data-title="SAE 2.02 - Mesures Physiques">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./SAE202.png" alt="projet 202" loading="lazy">
+                </figure>
+                <h3 class="project-title">SAE 2.02 - Mesures Physiques</h3>
+                <p class="project-category">Autre</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="autre">
+              <a href="#" class="project-link" data-pdf="./rapport/SAE 203 TP7_Emmanuel-GRONDIN_Djibrill-GAGE_ Analyse_d'un système_de_gestion_de_commandes.pdf" data-title="SAE 2.03 - Installation & Audit">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./SAE203.jpg" alt="projet 203" loading="lazy">
+                </figure>
+                <h3 class="project-title">SAE 2.03 - Installation & Audit</h3>
+                <p class="project-category">Autre</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="réseaux">
+              <a href="#" class="project-link" data-pdf="./SAE2.04_Projet_Integratif_brice_bernardin_hugues_chane-yin_grondin_emmanuel.pdf" data-title="SAE 2.04 - Architecture Réseau">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./SAE204.jpeg" alt="projet 204" loading="lazy">
+                </figure>
+                <h3 class="project-title">SAE 2.04 - Architecture Réseau</h3>
+                <p class="project-category">Réseaux</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="cyber">
+              <a href="#" class="project-link" data-pdf="./SAE3.CYBER.03_Concevoir un réseau sécurisé_DIJOUX-BENOIT_GRONDIN-EMMANUEL_BOISVILLIERS-YANN.pdf" data-title="SAE 3.03 - Conception Réseau Sécurisé">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./SAE 303.webp" alt="projet 303" loading="lazy">
+                </figure>
+                <h3 class="project-title">SAE 3.03 - Conception Réseau Sécurisé</h3>
+                <p class="project-category">Cyber</p>
+              </a>
+            </li>
+
+            <!-- Nouveaux Projets Cyber -->
+
+            <li class="project-item" data-filter-item data-category="cyber">
+              <a href="#" class="project-link" data-pdf="./rapport/TP_Wazuh_CYBER_Boisvilliers_Yann_Grondin_Emmanuel.pdf" data-title="TP Wazuh - SIEM & Monitoring">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <!-- PLACEHOLDER IMAGE -->
+                  <img src="./assets/images/wazuh.png" alt="TP Wazuh" loading="lazy" style="background: #333;">
+                </figure>
+                <h3 class="project-title">TP Wazuh - SIEM & Monitoring</h3>
+                <p class="project-category">Cyber</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="cyber">
+              <a href="#" class="project-link" data-pdf="./rapport/SAE304 Rapport-Writeups_CTF_Emmanuel-GRONDIN.pdf" data-title="SAE 304 - Writeups CTF">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <!-- PLACEHOLDER IMAGE -->
+                  <img src="./assets/images/kali.jpg" alt="SAE 304 CTF" loading="lazy" style="background: #333;">
+                </figure>
+                <h3 class="project-title">SAE 304 - Writeups CTF</h3>
+                <p class="project-category">Cyber</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="cyber">
+              <a href="#" class="project-link" data-pdf="./rapport/SAE304 Emmanuel_GRONDIN_machines_vulnerables.pdf" data-title="SAE 304 - Machines Vulnérables">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <!-- PLACEHOLDER IMAGE -->
+                  <img src="./assets/images/Kali-Linux-distribution-linux-1024x666.webp" alt="SAE 304 Machines" loading="lazy" style="background: #333;">
+                </figure>
+                <h3 class="project-title">SAE 304 - Machines Vulnérables</h3>
+                <p class="project-category">Cyber</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="cyber">
+              <a href="#" class="project-link" data-pdf="./rapport/Audit_Securite_Complet_Emmanuel_GRONDIN.pdf" data-title="Audit de Sécurité Complet">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <!-- PLACEHOLDER IMAGE -->
+                  <img src="./assets/images/audit.png" alt="Audit Sécurité" loading="lazy" style="background: #333;">
+                </figure>
+                <h3 class="project-title">Audit de Sécurité Complet</h3>
+                <p class="project-category">Cyber</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="cyber">
+              <a href="#" class="project-link" data-pdf="./rapport/2025-R4.Cyber.11_TP1_Emmanuel-GRONDIN.pdf" data-title="R4.Cyber.11 - Sécurisation Services">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <!-- PLACEHOLDER IMAGE -->
+                  <img src="./assets/images/network-security-levels-what-is.jpg" alt="R4 Cyber 11" loading="lazy" style="background: #333;">
+                </figure>
+                <h3 class="project-title">R4.Cyber.11 - Sécurisation Services</h3>
+                <p class="project-category">Cyber</p>
+              </a>
+            </li>
+
+            <!-- Nouveaux Projets Docker -->
+
+            <li class="project-item" data-filter-item data-category="docker">
+              <a href="#" class="project-link" data-pdf="./rapport/GRONDIN-Emmanuel-BUT3-TP1_docker.pdf" data-title="TP1 Docker">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <!-- PLACEHOLDER IMAGE -->
+                  <img src="./assets/images/png-clipart-docker-logo-landscape-tech-companies.png" alt="TP1 Docker" loading="lazy" style="background: #333;">
+                </figure>
+                <h3 class="project-title">TP1 Docker</h3>
+                <p class="project-category">Docker</p>
+              </a>
+            </li>
+
+            <li class="project-item" data-filter-item data-category="docker">
+              <a href="#" class="project-link" data-pdf="./rapport/GRONDIN-Emmanuel-BUT3-TP2_docker.pdf" data-title="TP2 Docker">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <!-- PLACEHOLDER IMAGE -->
+                  <img src="./assets/images/png-clipart-docker-bluemix-software-deployment-intermodal-container-puppet-container-marine-mammal-text-thumbnail.png" alt="TP2 Docker" loading="lazy" style="background: #333;">
+                </figure>
+                <h3 class="project-title">TP2 Docker</h3>
+                <p class="project-category">Docker</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!-- PDF Modal -->
+        <div class="pdf-modal-container" id="pdfModal">
+          <div class="pdf-overlay" id="pdfOverlay"></div>
+          <div class="pdf-modal">
+            <div class="pdf-modal-header">
+              <h2 class="pdf-modal-title" id="pdfTitle"></h2>
+              <button class="pdf-modal-close" id="pdfCloseBtn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="pdf-modal-content">
+              <embed id="pdfViewer" type="application/pdf" width="100%" height="600px">
+            </div>
+            <div class="pdf-modal-footer">
+              <a id="pdfDownloadBtn" href="#" download class="form-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                <ion-icon name="download-outline"></ion-icon>
+                <span>Télécharger</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/logo.webp" alt="Université de Bristol" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Recherche & IA</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026">Projet Futur</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Stage de Recherche - Université de Bristol</h3>
+
+                  <p class="blog-text">
+                    Préparation d'un stage de recherche en Angleterre à l'Université de Bristol. Le sujet portera sur l'auto-défense des systèmes informatiques (Self-Defending Networks) en utilisant l'Intelligence Artificielle pour la cybersécurité.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-info-main">
+          <p style="color: var(--light-gray); margin-bottom: 30px; font-size: var(--fs-6);">
+            Je suis actuellement à la recherche d'opportunités en réseaux, cybersécurité et même en intelligence artificielle. N'hésitez pas à me contacter directement via les coordonnées ci-dessous pour échanger sur mon profil ou mes projets.
+          </p>
+
+          <ul class="contacts-list" style="grid-template-columns: 1fr;">
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:emmanuel.grondin@rt-iut.re" class="contact-link">emmanuel.grondin@rt-iut.re</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Téléphone</p>
+                <a href="tel:+33693019838" class="contact-link">+262 06 93 01 98 38</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Localisation</p>
+                <address style="color: var(--white-2); font-style: normal;">Saint Denis, Réunion 97490</address>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
