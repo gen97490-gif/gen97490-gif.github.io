@@ -2236,8 +2236,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 .pdf-modal {
   background: #ffffff;
   color: #000;
-  width: 160mm;
-  height: 160mm;
+  width: 210mm;
+  height: 297mm;
   margin: auto;
   padding: 20mm;
 
