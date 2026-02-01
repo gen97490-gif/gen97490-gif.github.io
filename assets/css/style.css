@@ -2203,25 +2203,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 /* PDF Modal Styles */
-.pdf-modal {
-  background: #ffffff;
-  color: #000;
-  width: 210mm;
-  height: 297mm;
-  margin: auto;
-  padding: 20mm;
-
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-
-  display: block;
-  overflow: hidden;
+.pdf-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-1);
 }
 
 .pdf-modal-container.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 .pdf-overlay {
@@ -2232,6 +2233,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  z-index: -1;
 }
 
 .pdf-modal {
