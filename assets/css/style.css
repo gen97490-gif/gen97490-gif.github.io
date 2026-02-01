@@ -2238,9 +2238,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
-  width: 98%;
-  max-width: 1800px;
-  height: 95vh;
+  width: 98vw;
+  max-width: none;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-2);
@@ -2291,7 +2291,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .pdf-modal-content {
   flex: 1;
   overflow: auto;
-  padding: 15px;
+  padding: 0;
 }
 
 .pdf-modal-footer {
@@ -2302,8 +2302,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (max-width: 768px) {
   .pdf-modal {
-    width: 95%;
-    height: 90vh;
+    width: 98vw;
+    height: 98vh;
   }
 
   .pdf-modal-content embed {
