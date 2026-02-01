@@ -5,9 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Emmanuel Grondin</title>
-  <meta name="description" content="Portfolio d'Emmanuel Grondin, étudiant en BUT Réseaux & Télécommunications spécialisé en cybersécurité.">
+  <title>Emmanuel Grondin - Portfolio Cybersécurité & Réseaux (BUT R&T)</title>
+  <meta name="description" content="Portfolio d'Emmanuel Grondin, étudiant en BUT Réseaux & Télécommunications spécialisé en cybersécurité. Projets en administration réseaux, pentesting, Docker et développement.">
+  <meta name="keywords" content="Emmanuel Grondin, Portfolio, Cybersécurité, Réseaux, Télécommunications, BUT R&T, Pentesting, Cisco, Docker, Python, La Réunion">
+  <meta name="author" content="Emmanuel Grondin">
   <meta name="theme-color" content="#2b2b2c">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gen97490-gif.github.io/">
+  <meta property="og:title" content="Emmanuel Grondin - Portfolio Cybersécurité & Réseaux">
+  <meta property="og:description" content="Découvrez mes projets et compétences en cybersécurité, administration réseaux et développement.">
+  <meta property="og:image" content="https://gen97490-gif.github.io/assets/images/LOGO-onglet.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://gen97490-gif.github.io/">
+  <meta property="twitter:title" content="Emmanuel Grondin - Portfolio Cybersécurité & Réseaux">
+  <meta property="twitter:description" content="Découvrez mes projets et compétences en cybersécurité, administration réseaux et développement.">
+  <meta property="twitter:image" content="https://gen97490-gif.github.io/assets/images/LOGO-onglet.jpg">
 
   <!--
     - favicon
@@ -31,6 +47,17 @@
 </head>
 
 <body>
+
+  <!--
+    - #LOADING SCREEN
+  -->
+  <div class="loading-screen" data-loading-screen>
+    <div class="loader">
+      <div class="loader-circle"></div>
+      <img src="./assets/images/LOGO-onglet.jpg" alt="Logo" class="loader-logo">
+    </div>
+    <p class="loading-text">Initialisation...</p>
+  </div>
 
   <!--
     - #MAIN
@@ -222,85 +249,6 @@
 
 
         <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Mes domaines</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="server-outline" style="font-size: 40px; color: var(--crimson-red); margin: auto;"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Administration Réseaux</h4>
-
-                <p class="service-item-text">
-                  Conception, déploiement et maintenance d'infrastructures réseaux sécurisées et performantes.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="shield-checkmark-outline" style="font-size: 40px; color: var(--crimson-red); margin: auto;"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cybersécurité</h4>
-
-                <p class="service-item-text">
-                  Audit de sécurité, pentesting et mise en place de politiques de défense des systèmes.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="code-slash-outline" style="font-size: 40px; color: var(--crimson-red); margin: auto;"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Développement & Scripting</h4>
-
-                <p class="service-item-text">
-                  Automatisation de tâches (Python, Bash) et développement d'outils sur mesure.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <ion-icon name="desktop-outline" style="font-size: 40px; color: var(--crimson-red); margin: auto;"></ion-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Systèmes & Virtualisation</h4>
-
-                <p class="service-item-text">
-                  Administration Linux/Windows et gestion d'environnements virtualisés (Docker, ESXi).
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
           - testimonials (renamed to skills)
         -->
 
@@ -311,15 +259,15 @@
           <ul class="testimonials-list has-scrollbar">
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+              <div class="content-card static-card">
 
                 <figure class="testimonials-avatar-box">
                   <ion-icon name="server-outline" style="font-size: 40px; color: #ff6347;"></ion-icon>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Administration Réseaux</h4>
+                <h4 class="h4 testimonials-item-title">Administration Réseaux</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text">
                   <p>
                     La maîtrise des infrastructures réseaux (VLAN, routage OSPF/BGP, commutation) sur équipements Cisco et via GNS3 m'a permis de comprendre la colonne vertébrale des communications numériques. Cela m'a apporté une rigueur logique essentielle pour diagnostiquer des pannes complexes et concevoir des architectures robustes.
                   </p>
@@ -329,15 +277,15 @@
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+              <div class="content-card static-card">
 
                 <figure class="testimonials-avatar-box">
                   <ion-icon name="shield-checkmark-outline" style="font-size: 40px; color: #ff6347;"></ion-icon>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Cybersécurité</h4>
+                <h4 class="h4 testimonials-item-title">Cybersécurité</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text">
                   <p>
                     L'exploration du pentesting et de l'analyse de vulnérabilités (Nmap, Wireshark, Wazuh) a aiguisé mon esprit critique et ma vigilance. J'ai appris à anticiper les menaces plutôt qu'à les subir, transformant chaque faille potentielle en une opportunité de renforcement du système d'information.
                   </p>
@@ -347,15 +295,15 @@
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+              <div class="content-card static-card">
 
                 <figure class="testimonials-avatar-box">
                   <ion-icon name="code-slash-outline" style="font-size: 40px; color: #ff6347;"></ion-icon>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Développement Web</h4>
+                <h4 class="h4 testimonials-item-title">Développement Web</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text">
                   <p>
                     Le développement (HTML, CSS, JS, PHP) m'a donné la capacité de créer mes propres outils et interfaces. Au-delà du code, cela m'a appris à structurer ma pensée et à traduire des besoins fonctionnels en solutions techniques concrètes, améliorant ainsi mon autonomie sur les projets.
                   </p>
@@ -365,15 +313,15 @@
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+              <div class="content-card static-card">
 
                 <figure class="testimonials-avatar-box">
                   <ion-icon name="cog-outline" style="font-size: 40px; color: #ff6347;"></ion-icon>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Systèmes & Infrastructure</h4>
+                <h4 class="h4 testimonials-item-title">Systèmes & Infrastructure</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text">
                   <p>
                     L'administration système (Linux, Windows, Virtualisation) m'a apporté une vision globale de l'environnement IT. J'ai acquis une méthodologie d'automatisation et de supervision (SNMP, Cacti) indispensable pour garantir la disponibilité et la performance des services en production.
                   </p>
@@ -385,51 +333,6 @@
           </ul>
 
         </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
 
 
         <!--
@@ -729,7 +632,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./SAE101.png" alt="projet 101" loading="lazy">
+                  <img src="./SAE101.png" alt="Certification ANSSI - Hygiène Informatique" loading="lazy">
                 </figure>
                 <h3 class="project-title">Certification ANSSI - Hygiène Informatique</h3>
                 <p class="project-category">Cyber</p>
@@ -743,7 +646,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./SAE102.png" alt="projet 102" loading="lazy">
+                  <img src="./SAE102.png" alt="Schéma réseau LAN Cisco" loading="lazy">
                 </figure>
                 <h3 class="project-title">Conception & Déploiement Réseau LAN</h3>
                 <p class="project-category">Réseaux</p>
@@ -757,7 +660,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./SAE103.png" alt="projet 103" loading="lazy">
+                  <img src="./SAE103.png" alt="Analyse de spectre Wi-Fi" loading="lazy">
                 </figure>
                 <h3 class="project-title">Audit Wi-Fi & Analyse Protocolaire</h3>
                 <p class="project-category">Autre</p>
@@ -771,7 +674,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./SAE201.png" alt="projet 201" loading="lazy">
+                  <img src="./SAE201.png" alt="Administration services réseaux Linux Windows" loading="lazy">
                 </figure>
                 <h3 class="project-title">Administration Système & Services Réseaux</h3>
                 <p class="project-category">Réseaux</p>
@@ -785,7 +688,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./SAE202.png" alt="projet 202" loading="lazy">
+                  <img src="./SAE202.png" alt="Analyse signal fibre optique" loading="lazy">
                 </figure>
                 <h3 class="project-title">Analyse Physique des Signaux & Transmission</h3>
                 <p class="project-category">Autre</p>
@@ -799,7 +702,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./SAE203.jpg" alt="projet 203" loading="lazy">
+                  <img src="./SAE203.jpg" alt="Audit de conformité système" loading="lazy">
                 </figure>
                 <h3 class="project-title">Audit de Conformité & Installation de Services</h3>
                 <p class="project-category">Autre</p>
@@ -813,7 +716,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./SAE204.jpeg" alt="projet 204" loading="lazy">
+                  <img src="./SAE204.jpeg" alt="Architecture réseau haute disponibilité" loading="lazy">
                 </figure>
                 <h3 class="project-title">Architecture Réseau Haute Disponibilité</h3>
                 <p class="project-category">Réseaux</p>
@@ -827,7 +730,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./SAE 303.webp" alt="projet 303" loading="lazy">
+                  <img src="./SAE 303.webp" alt="Architecture sécurisée pare-feu" loading="lazy">
                 </figure>
                 <h3 class="project-title">Architecture & Sécurisation d'Infrastructure</h3>
                 <p class="project-category">Cyber</p>
@@ -844,7 +747,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <!-- PLACEHOLDER IMAGE -->
-                  <img src="./assets/images/wazuh.png" alt="TP Wazuh" loading="lazy" style="background: #333;">
+                  <img src="./assets/images/wazuh.png" alt="Interface Dashboard Wazuh SIEM" loading="lazy" style="background: #333;">
                 </figure>
                 <h3 class="project-title">Mise en place d'un SIEM (Wazuh) & Supervision</h3>
                 <p class="project-category">Cyber</p>
@@ -859,7 +762,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <!-- PLACEHOLDER IMAGE -->
-                  <img src="./assets/images/kali.jpg" alt="SAE 304 CTF" loading="lazy" style="background: #333;">
+                  <img src="./assets/images/kali.jpg" alt="Kali Linux pour CTF et investigation" loading="lazy" style="background: #333;">
                 </figure>
                 <h3 class="project-title">Rapport d'Investigation & Challenges CTF</h3>
                 <p class="project-category">Cyber</p>
@@ -874,7 +777,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <!-- PLACEHOLDER IMAGE -->
-                  <img src="./assets/images/Kali-Linux-distribution-linux-1024x666.webp" alt="SAE 304 Machines" loading="lazy" style="background: #333;">
+                  <img src="./assets/images/Kali-Linux-distribution-linux-1024x666.webp" alt="Pentesting sur machines vulnérables" loading="lazy" style="background: #333;">
                 </figure>
                 <h3 class="project-title">Pentesting & Audit de Vulnérabilités</h3>
                 <p class="project-category">Cyber</p>
@@ -889,7 +792,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <!-- PLACEHOLDER IMAGE -->
-                  <img src="./assets/images/audit.png" alt="Audit Sécurité" loading="lazy" style="background: #333;">
+                  <img src="./assets/images/audit.png" alt="Rapport d'audit de sécurité" loading="lazy" style="background: #333;">
                 </figure>
                 <h3 class="project-title">Audit de Sécurité Organisationnel & Technique</h3>
                 <p class="project-category">Cyber</p>
@@ -904,7 +807,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <!-- PLACEHOLDER IMAGE -->
-                  <img src="./assets/images/network-security-levels-what-is.jpg" alt="R4 Cyber 11" loading="lazy" style="background: #333;">
+                  <img src="./assets/images/network-security-levels-what-is.jpg" alt="Hardening et sécurisation système" loading="lazy" style="background: #333;">
                 </figure>
                 <h3 class="project-title">Hardening & Sécurisation des Services Critiques</h3>
                 <p class="project-category">Cyber</p>
@@ -921,7 +824,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <!-- PLACEHOLDER IMAGE -->
-                  <img src="./assets/images/grafana.png" alt="TP1 Docker" loading="lazy" style="background: #333;">
+                  <img src="./assets/images/grafana.png" alt="Monitoring Docker avec Grafana" loading="lazy" style="background: #333;">
                 </figure>
                 <h3 class="project-title">Déploiement d'Infrastructure Conteneurisée</h3>
                 <p class="project-category">Docker</p>
@@ -936,7 +839,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
                   <!-- PLACEHOLDER IMAGE -->
-                  <img src="./assets/images/docker.jpg" alt="TP2 Docker" loading="lazy" style="background: #333;">
+                  <img src="./assets/images/docker.jpg" alt="Orchestration Docker Compose" loading="lazy" style="background: #333;">
                 </figure>
                 <h3 class="project-title">Orchestration de Conteneurs & Micro-services</h3>
                 <p class="project-category">Docker</p>
@@ -1098,6 +1001,10 @@
           <embed id="pdfViewer" type="application/pdf" width="100%" height="100%">
         </div>
         <div class="pdf-modal-footer">
+          <a id="pdfSiteBtn" href="#" target="_blank" class="form-btn" style="display: none; text-decoration: none; align-items: center; gap: 8px; margin-bottom: 10px;">
+            <ion-icon name="globe-outline"></ion-icon>
+            <span>Visiter le site</span>
+          </a>
           <a id="pdfDownloadBtn" href="#" download class="form-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
             <ion-icon name="download-outline"></ion-icon>
             <span>Télécharger</span>

@@ -237,13 +237,21 @@ const pdfCloseBtn = document.getElementById('pdfCloseBtn');
 const pdfTitle = document.getElementById('pdfTitle');
 const pdfViewer = document.getElementById('pdfViewer');
 const pdfDownloadBtn = document.getElementById('pdfDownloadBtn');
+const pdfSiteBtn = document.getElementById('pdfSiteBtn');
 const projectLinks = document.querySelectorAll('.project-link');
 
-function openPDFModal(pdfUrl, title) {
-  pdfTitle.textContent = title;
+function openPDFModal(pdfUrl, title, siteLink) {
+  pdfTitle.innerText = title;
   pdfViewer.src = pdfUrl;
   pdfDownloadBtn.href = pdfUrl;
-  pdfDownloadBtn.download = title.replace(/\s+/g, '_') + '.pdf';
+
+  if (siteLink) {
+    pdfSiteBtn.href = siteLink;
+    pdfSiteBtn.style.display = 'flex';
+  } else {
+    pdfSiteBtn.style.display = 'none';
+  }
+
   pdfModal.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -260,12 +268,19 @@ if (projectLinks && projectLinks.length) {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       const pdfUrl = this.getAttribute('data-pdf');
+      const siteLink = this.getAttribute('data-link'); // Récupération du lien du site
       const title = this.getAttribute('data-title') || this.querySelector('.project-title')?.innerText || 'Document';
 
       if (pdfUrl) {
+        // Cas 1 : PDF (avec ou sans site optionnel) -> Ouvre la modale
         const encodedUrl = encodeURI(pdfUrl);
         openPDFModal(encodedUrl, title);
+        openPDFModal(encodedUrl, title, siteLink);
+      } else if (siteLink) {
+        // Cas 2 : Site uniquement -> Ouvre dans un nouvel onglet
+        window.open(siteLink, '_blank');
       } else {
+        // Cas 3 : Fallback standard
         const href = this.getAttribute('href');
         if (href && href.endsWith('.html')) {
           window.open(href, '_blank');
@@ -274,6 +289,14 @@ if (projectLinks && projectLinks.length) {
         }
       }
     });
+  });
+
+  // Amélioration visuelle : Change l'icône si c'est un lien web pur (sans PDF)
+  projectLinks.forEach(link => {
+    if (link.hasAttribute('data-link') && !link.hasAttribute('data-pdf')) {
+      const icon = link.querySelector('.project-item-icon-box ion-icon');
+      if (icon) icon.setAttribute('name', 'globe-outline');
+    }
   });
 }
 
@@ -361,3 +384,14 @@ if (skillSection) {
   
   observer.observe(skillSection);
 }
+
+// 3. Loading Screen Animation
+const loadingScreen = document.querySelector("[data-loading-screen]");
+
+window.addEventListener("load", function () {
+  // Petit délai pour assurer une transition fluide et que l'animation soit vue
+  setTimeout(() => {
+    loadingScreen.classList.add("loaded");
+    document.body.style.overflow = "auto";
+  }, 800);
+});
