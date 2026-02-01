@@ -1381,6 +1381,14 @@ main {
   font-weight: var(--fw-300);
 }
 
+.project-description {
+  color: var(--light-gray);
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: 10px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
 .blog-meta .dot {
   background: var(--light-gray-70);
   width: 4px;
