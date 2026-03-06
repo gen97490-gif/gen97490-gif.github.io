@@ -229,33 +229,66 @@
 
       <article class="about  active" data-page="about">
 
-        <header>
-          <h2 class="h2 article-title">À propos de moi</h2>
+        <header style="display: flex; justify-content: flex-start; align-items: center; gap: 20px;">
+          <div>
+            <h2 class="h2 article-title" data-lang-fr>À propos de moi</h2>
+            <h2 class="h2 article-title" data-lang-en style="display: none;">About Me</h2>
+          </div>
+          
+          <button class="lang-toggle-btn" data-lang-toggle-btn title="Switch to English">
+            <span class="lang-text">EN</span>
+            <ion-icon name="language-outline"></ion-icon>
+          </button>
         </header>
 
         <section class="about-text">
-          <p>
-            Bienvenue sur mon portfolio. Cet espace présente un parcours orienté réseaux et cybersécurité, avec une approche axée sur des solutions fiables et sécurisées.
-          </p>
-          <p>
-            Étudiant en 3ᵉ année de BUT Réseaux &amp; Télécommunications, spécialisation cybersécurité, je suis actuellement à la recherche d’opportunités de stage.
-            Intéressé par les réseaux, la sécurité informatique et l’intelligence artificielle, je développe mes compétences à travers des projets concrets et des défis techniques.
-          </p>
+          <!-- Version Française -->
+          <div data-lang-fr>
+            <p>
+              Bienvenue sur mon portfolio. Cet espace présente un parcours orienté réseaux et cybersécurité, avec une approche axée sur des solutions fiables et sécurisées.
+            </p>
+            <p>
+              Étudiant en 3ᵉ année de BUT Réseaux &amp; Télécommunications, spécialisation cybersécurité, je suis actuellement à la recherche d’opportunités de stage.
+              Intéressé par les réseaux, la sécurité informatique et l’intelligence artificielle, je développe mes compétences à travers des projets concrets et des défis techniques.
+            </p>
+            <p>
+              Ce site vous permet de consulter mon portfolio, mon CV ainsi que mes profils professionnels.
+            </p>
+            <h3 class="h3" style="margin-top: 30px; margin-bottom: 15px;">Ce que mon parcours dit de moi</h3>
+            <p>
+              Mon portfolio illustre ma transition d'étudiant en réseaux vers un profil d'expert en sécurité des infrastructures. 
+              Au fil de mes trois années de BUT, j'ai développé une conviction : la sécurité ne se superpose pas au réseau, elle en est la fondation.
+            </p>
+            <p>
+              À travers mes projets (SIEM, Pentesting, Stage chez NXO), je démontre ma capacité à allier la rigueur de l'administration système 
+              à la proactivité de la cybersécurité. Mon ambition est désormais de franchir une nouvelle étape en intégrant l'Intelligence Artificielle 
+              dans les stratégies de défense, un projet que je concrétiserai lors de mon stage de recherche à Bristol.
+            </p>
+          </div>
 
-          <p>
-            Ce site vous permet de consulter mon portfolio, mon CV ainsi que mes profils professionnels.
-          </p>
-
-          <h3 class="h3" style="margin-top: 30px; margin-bottom: 15px;">Ce que mon parcours dit de moi</h3>
-          <p>
-            Mon portfolio illustre ma transition d'étudiant en réseaux vers un profil d'expert en sécurité des infrastructures. 
-            Au fil de mes trois années de BUT, j'ai développé une conviction : la sécurité ne se superpose pas au réseau, elle en est la fondation.
-          </p>
-          <p>
-            À travers mes projets (SIEM, Pentesting, Stage chez NXO), je démontre ma capacité à allier la rigueur de l'administration système 
-            à la proactivité de la cybersécurité. Mon ambition est désormais de franchir une nouvelle étape en intégrant l'Intelligence Artificielle 
-            dans les stratégies de défense, un projet que je concrétiserai lors de mon stage de recherche à Bristol.
-          </p>
+          <!-- English Version -->
+          <div data-lang-en style="display: none;">
+            <p>
+              Welcome to my portfolio. This space showcases a journey focused on networks and cybersecurity, with an approach centered on reliable and secure solutions.
+            </p>
+            <p>
+              As a 3rd-year student in BUT Networks & Telecommunications, specializing in cybersecurity, I am currently looking for internship opportunities.
+              Interested in networks, IT security, and artificial intelligence, I develop my skills through concrete projects and technical challenges.
+            </p>
+            <p>
+              This site allows you to view my portfolio, my CV, and my professional profiles.
+            </p>
+            <h3 class="h3" style="margin-top: 30px; margin-bottom: 15px;">What my journey says about me</h3>
+            <p>
+              My portfolio illustrates my transition from a network student to an infrastructure security expert profile. 
+              Throughout my three years of BUT, I have developed a conviction: security is not superimposed on the network, it is its foundation.
+            </p>
+            <p>
+              Through my projects (SIEM, Pentesting, Internship at NXO), I demonstrate my ability to combine the rigor of system administration 
+              with the proactivity of cybersecurity. My ambition is now to take a new step by integrating Artificial Intelligence 
+              into defense strategies, a project I will concretize during my research internship in Bristol.
+            </p>
+          </div>
         </section>
 
 
@@ -1007,7 +1040,7 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Football</h4>
                 <p class="service-item-text">
-                  Esprit d'équipe et compétition. Pratique régulière en club, développant résilience et cohésion.
+                  Esprit d'équipe et compétition, développant résilience et cohésion.
                 </p>
               </div>
             </li>

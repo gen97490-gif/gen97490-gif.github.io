@@ -2362,6 +2362,46 @@ textarea.form-input::-webkit-resizer { display: none; }
   animation: pulse 2s infinite;
 }
 
+/*-----------------------------------*\
+  #LANGUAGE TOGGLE
+\*-----------------------------------*/
+
+.lang-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--border-gradient-onyx);
+  color: var(--light-gray);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: var(--fs-7);
+  transition: var(--transition-1);
+  box-shadow: var(--shadow-1);
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+.lang-toggle-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  background: var(--onyx);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.lang-toggle-btn:hover {
+  background: var(--bg-gradient-red-1);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.lang-toggle-btn:hover::before {
+  background: var(--bg-gradient-red-2);
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }

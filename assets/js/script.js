@@ -395,3 +395,27 @@ window.addEventListener("load", function () {
     document.body.style.overflow = "auto";
   }, 800);
 });
+
+// 4. Language Toggle Functionality
+const langToggleBtn = document.querySelector("[data-lang-toggle-btn]");
+const langFrElements = document.querySelectorAll("[data-lang-fr]");
+const langEnElements = document.querySelectorAll("[data-lang-en]");
+const langText = document.querySelector(".lang-text");
+
+if (langToggleBtn) {
+  langToggleBtn.addEventListener("click", function() {
+    const isEnglish = langToggleBtn.classList.toggle("active-lang");
+    
+    if (isEnglish) {
+      langFrElements.forEach(el => el.style.display = "none");
+      langEnElements.forEach(el => el.style.display = "block");
+      if(langText) langText.innerText = "FR";
+      this.title = "Passer en Français";
+    } else {
+      langFrElements.forEach(el => el.style.display = "block");
+      langEnElements.forEach(el => el.style.display = "none");
+      if(langText) langText.innerText = "EN";
+      this.title = "Switch to English";
+    }
+  });
+}
