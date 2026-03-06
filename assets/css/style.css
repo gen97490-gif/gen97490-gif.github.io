@@ -2372,11 +2372,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   gap: 8px;
   background: var(--border-gradient-onyx);
   color: var(--light-gray);
-  padding: 3px 7px;
-  border-radius: 7px;
-  font-size: 0.92em;
+  padding: 1px 4px;
+  border-radius: 5px;
+  font-size: 0.82em;
   font-weight: 600;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
   transition: var(--transition-1);
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
   border: 2px solid var(--crimson-red, #e63946);
@@ -2389,7 +2389,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .lang-toggle-btn .lang-label {
-  font-size: 0.92em;
+  font-size: 0.82em;
   color: var(--crimson-red, #e63946);
   margin-left: 6px;
   font-weight: 700;
