@@ -405,18 +405,15 @@ const langText = document.querySelector(".lang-text");
 if (langToggleBtn) {
   langToggleBtn.addEventListener("click", function() {
     const isEnglish = langToggleBtn.classList.toggle("active-lang");
-    const langLabel = document.querySelector(".lang-label");
     if (isEnglish) {
       langFrElements.forEach(el => el.style.display = "none");
       langEnElements.forEach(el => el.style.display = "block");
       if(langText) langText.innerText = "FR";
-      if(langLabel) langLabel.innerText = "| EN";
       this.title = "Passer en Français";
     } else {
       langFrElements.forEach(el => el.style.display = "block");
       langEnElements.forEach(el => el.style.display = "none");
       if(langText) langText.innerText = "EN";
-      if(langLabel) langLabel.innerText = "| FR";
       this.title = "Switch to English";
     }
   });
